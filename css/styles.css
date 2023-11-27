@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(72deg, #012b50 1%, #165791 99%);
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(72deg, #012b50 1%, #165791 99%);
+    padding: 0px;
+    text-align: center;
+    height: 120px;
+    margin-inline: 0px;
+    margin-bottom: -85px;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    bottom: -315px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover {
+    background-color: #fff
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin: -10%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+.Primary_Menu {
+    background-color: #055EAB;
+    display: -webkit-box;
+    text-align: center;
+    height: 54px;
+}
+
+.logoempresa {
+    display: inline-flex;
+    width: 250px;
+    height: 250px;
+    vertical-align: -5px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+    top: -55px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2f4d6d;
+    flex-direction: row;
+    margin-bottom: -5px;
+    height: 80px;
+    margin-top: 85px;
+}
+
+nav img {
+    width: 150px;
+    height: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 1s;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.submenu_produtos,
+.submenu_suporte,
+.submenu_ajuda {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+}
+
+.submenu_produtos a,
+.submenu_suporte a,
+.submenu_ajuda a {
+    display: block;
+    padding: 8px 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.submenu_produtos a:hover,
+.submenu_suporte a:hover,
+.submenu_ajuda a:hover {
+    background-color: #555;
+}
+
+nav li:hover .submenu_produtos {
+    display: block;
+}
+
+nav li:hover .submenu_suporte {
+    display: block;
+}
+
+nav li:hover .submenu_ajuda {
+    display: block;
+}
+
+footer {
+    background-color: #2f4d6d;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
+    margin: 0;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.rodape-div-4-coluna {
+    text-align:center; 
+}
+
+.rodape-div-4-coluna img {
+    margin-top: 10px; 
+    display: grid; 
+}
+
+
+.rodape-div-4 img {
+    width: 35px;
+    height: 35px;
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
